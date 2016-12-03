@@ -1,0 +1,1294 @@
+﻿
+
+/************************************************************************
+Style sheet:	Quản lý kho khàng Thép Quang Hưng Layout ver 1.0
+Design by: 		Trần Quốc Hùng
+Email:			hungzero@gmail.com
+
+Bảng màu:
+1. #2777B6 : blue , menu bg, table header bg, footer bg
+2. #679FBA : light blue, unselected menu bg
+3. #02AEBE : light cian, page list title
+4. #F2F3FF : table bg
+5. #E6F2FF : table odd row bg
+6. #333333 : text color
+*************************************************************************
+*/
+
+/* BEGIN global */
+html
+{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+body
+{
+    font-family: Verdana, Tahoma, Arial, sans-serif;
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+img
+{
+	margin:0px;
+	border:none 0px;	
+}
+
+td,th,tr,input,select,textarea
+{
+	padding:0px;
+	margin:0px;	
+}
+a
+{
+    text-decoration: none;
+    color: #2777B6;
+}
+a:visited
+{
+    color: #2777B6;
+}
+input.text
+{
+    border: none;
+    border-bottom: dashed 1px #2777B6;
+}
+
+/* END global */
+#page
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    min-width: 980px;
+}
+
+/* BEGIN id=content */
+#content
+{
+    position: absolute;
+    top: 72px;
+    right: 0px;
+    bottom: 31px;
+    left: 0px;
+    border: solid 2px #2777B6;
+}
+#control
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    line-height: 30px;
+    height: 30px;
+    background-color: #D0D0D0;
+    font-size: 0.7em;
+    margin: 0px;
+    padding: 1px 0px 2px 20px;
+    text-align: left;
+    border-bottom:solid 1px #000;
+ /*   border: solid 1px #999;*/
+}
+
+#control select,#control input
+{
+	border:solid 1px #2777B6;
+    float:left;
+    margin: 4px 5px 0 0;
+    line-height:23px;
+}
+
+#control select
+{
+	height:22px;
+}
+
+#control input
+{	
+	height:20px;
+}
+
+
+/* BEGIN id=content3 */
+#content3
+{
+    position: absolute;
+    top: 72px;
+    right: 0px;
+    bottom: 31px;
+    left: 0px;
+    border: solid 2px #2777B6;
+}
+#control3
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    line-height: 60px;
+    height: 60px;
+    background-color: #D0D0D0;
+    font-size: 0.7em;
+    margin: 0px;
+    padding: 1px 0px 2px 20px;
+    text-align: left;
+    border-bottom:solid 1px #000;
+ /*   border: solid 1px #999;*/
+}
+
+#control3 select,#control3 input
+{
+	border:solid 1px #2777B6;
+    float:left;
+    margin: 4px 5px 0 0;
+    line-height:23px;
+}
+
+#control3 select
+{
+	height:22px;
+}
+
+#control3 input
+{	
+	height:20px;
+}
+
+.divScroll /* #Cố định bảng, scroll cho bảng */
+{
+    overflow: auto;
+    position: absolute;
+    top: 34px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    padding: 0px;
+}
+
+.divScroll3 /* #Cố định bảng, scroll3 cho bảng */
+{
+    overflow: auto;
+    position: absolute;
+    top: 64px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    padding: 0px;
+}
+
+.loading
+{
+    display: block;
+    margin: 100px auto auto;
+    text-align:center;	
+}
+
+.divErrorOnline
+{
+	margin: 60px auto auto;
+    text-align:center;
+    height:200px;
+    width:400px;
+    border:dotted 2px red;
+}
+/* BEGIN id=tblDachSach */
+#tblDanhSach
+{
+    border-collapse: collapse;
+    margin: auto;
+}
+#content #tblDanhSach tr.odd
+{
+    background: #E6F2FF;
+}
+#content #tblDanhSach tr:hover
+{
+    background: #BBDBFF !important;
+}
+#content #tblDanhSach tr.rowChecked
+{
+    color: Red;
+}
+#content #tblDanhSach th
+{
+    font-size: .7em;
+    color: #fff;
+    background: #2777B6;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+    padding: .2em .2em;
+    border: 1px solid #999;
+    margin: 0;
+}
+#content #tblDanhSach td
+{
+    padding: .2em .2em;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+    font-size: .7em;
+    border: 1px solid #999;
+    margin: 0;
+}
+
+#content #tblDanhSach a.table_list_edit{
+	width:22px;
+	height:22px;
+    float:left;
+	background:url(../../images/action_icons.gif) no-repeat -24px 0;
+	display:block;
+	margin-right:4px;
+}
+
+#content #tblDanhSach a.table_list_delete{
+	width:22px;
+	height:22px;
+    float:left;
+	background:url(../../images/action_icons.gif) no-repeat -48px 0;
+	display:block;
+}
+
+#content #tblDanhSach a.table_list_save {
+    background: url("../../images/action_icons.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 22px;
+    margin-right: 4px;
+    width: 22px;
+}
+
+#content #tblDanhSach a.table_list_chon {
+    background: url("../../images/left.png")no-repeat;
+    display: block;
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin-left: 4px;
+}
+#content #tblDanhSach a.table_list_chon:hover
+{
+	color:Red;
+}
+
+#content #tblDanhSach a.table_list_print {
+    background: url("../../images/print_16.png")no-repeat;
+    display: block;
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+}
+
+#content #tblDanhSach .inputText {
+    font-size: 1em;
+    margin: 0 auto;
+    padding: 0.2em;
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    width: 95%;
+}
+
+.inputText {
+    color: #113355;
+}
+
+.inputSelect
+{
+	background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+}
+
+/* END id=tblDanhSach */
+
+#content .divThongBao
+{
+    width:100%;
+    font-size:.8em;
+    text-align:center;
+    background:#CCE6FF;
+}
+
+#content .divError
+{
+    width:100%;
+    font-size:.8em;
+    text-align:center;
+    background:#FFD7D7;
+}
+
+
+/* END id=content */
+#footer
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+    background: #2777B6;
+    padding: 0;
+}
+#command
+{
+    margin-left: 135px;
+    width: 500px;
+    line-height: 30px;
+    height:30px;
+}
+
+
+
+
+
+#footer p
+{
+    margin: 0 auto;
+    padding: 0;
+    padding-right: 20px;
+    color: #fff;
+    font-weight: normal;
+    font-size: .7em;
+    line-height: 30px;
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+/* Header Style*/
+#header{
+	min-width:985px;
+	width:auto !important;
+	width:985px;
+	border-bottom:solid 5px #2777B6;
+	height:66px;
+	
+}
+#header h1{
+	position:absolute;
+	font-size: 1.7em;
+	font-weight: bold;
+	color: #123F73;
+	height: 50px;
+	left: 480px;
+	top: 25px;
+	margin:0;
+	padding:0;
+	width:500px;
+}
+
+#header #logo{
+	position:absolute;
+	width:250px;
+	height:63px;
+	top:2px;
+	left:25px;
+	background:url(../../images/logo_TB_1.png) no-repeat;
+
+}
+
+#header #user_info{
+	float:right;
+	width:auto;
+	font-size:.7em;
+	font-weight:bold;
+	color:#666;
+	margin:3px 3px 0 0;
+}
+	/* Navigation section*/
+
+.nav{
+width: 100%;
+font-weight: bold;
+}
+
+.nav:after{ /*Add margin between menu and rest of content in Firefox*/
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.nav ul{
+	
+margin:0 400px;
+padding:0;
+position:absolute;
+top:45px;
+width:585px;
+text-align: center; /*set value to "left", "center", or "right"*/
+}
+
+.nav ul li{
+display:block;
+float:left;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+margin:0;
+padding-right:3px;
+text-align:center;
+width:auto;
+}
+
+.nav ul li a{
+color:#CCCCCC;
+display:block;
+font-size:0.75em;
+font-weight:bold;
+height:21px;
+line-height:21px;
+padding:0;
+width:112px;
+text-decoration:none;
+background:transparent url(../../Images/tab_menu_bg.gif) no-repeat scroll 0 -22px;
+}
+
+.nav ul li a.on{
+color:#FFFFFF;
+background:transparent url(../../Images/tab_menu_bg.gif) no-repeat scroll 0 0;
+}
+
+.nav ul li a:hover, .nav ul li a.selected{ /*script dynamically adds a class of "selected" to the current active menu item*/
+background: transparent url(../../Images/tab_menu_bg.gif) no-repeat scroll 0 0; /*THEME CHANGE HERE*/
+color:#FFFFFF;
+}
+
+
+
+
+
+/* ######### Style for Drop Down Menu ######### */
+
+.dropmenudiv{
+position:absolute;
+top: 0;
+border: 1px solid #2777B6; /*THEME CHANGE HERE*/
+border-bottom-width: 0;
+font-size:0.7em;
+line-height:18px;
+z-index:100;
+background-color: white;
+width: 150px;
+visibility: hidden;
+}
+
+
+.dropmenudiv a, .dropmenudiv a:visited{
+width: auto;
+display: block;
+text-indent: 3px;
+border-bottom: 1px dotted #2777B6; /*THEME CHANGE HERE*/
+padding: 2px 0;
+text-decoration: none;
+font-weight: bold;
+color:gray;
+}
+
+.dropmenudiv a.on{
+background-color: #2777B6;
+color:#ffffff;
+border-bottom: 1px dotted #FFFFFF;
+}
+
+* html .dropmenudiv a{ /*IE only hack*/
+width: 100%;
+}
+
+.dropmenudiv a:hover{ /*THEME CHANGE HERE*/
+background-color: #2777B6;
+color:#ffffff;
+border-bottom: 1px dotted #FFFFFF;
+}
+
+    #navSubBG{
+	  position:absolute;
+	  top:61px;
+	  /**top:110px; for IE*/
+	  width:100%;
+	  height:5px;
+	  background:#2777B6;
+	  clear:both;
+	  padding:0;
+	  margin:0;
+	  z-index:-6000;
+  }
+  /* End Navigation section*/
+  
+/************************* PAGINATION **************************************/
+/*.paginationTG
+{
+float:right;
+font:10px Tahoma, Verdana, Arial, "Trebuchet MS", Helvetica, sans-serif;
+color:#3d3d3d;
+margin-top: 10px;
+margin-left:auto;
+margin-right:15px;
+width:50%;
+text-align:right;
+}*/
+
+.paginationTG
+{
+    color: #3D3D3D;
+    font: 10px Tahoma,Verdana,Arial, "Trebuchet MS" ,Helvetica,sans-serif;
+    right: 10px;
+    position: fixed;
+    text-align: right;
+    top: 45px;
+    width: 390px;
+}
+
+.paginationTG ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.paginationTG li
+{
+    list-style-type: none;
+    display: inline;
+    padding-bottom: 1px;
+}
+
+.paginationTG a, .paginationTG a:visited
+{
+    padding: 5px 6px;
+    text-decoration: none;
+    background-color: inherit;
+    color: #0191D0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.paginationTG a:hover, .paginationTG a:active
+{
+    color: #ffffff;
+    background-image: url(../../Images/pagination_bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.paginationTG li.currentpage
+{
+    font-weight: bold;
+    padding: 5px 9px;
+    background-color: inherit;
+    color: #ffffff;
+    background-image: url(../../Images/pagination_bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.paginationTG li.disablepage
+{
+    padding: 0 5px;
+    border: 1px solid #929292;
+    color: #929292;
+}
+
+.paginationTG li.nextpage
+{
+    font-weight: bold;
+}
+
+* html .paginationTG li.currentpage, * html .paginationTG li.disablepage
+{
+    /*IE 6 and below. Adjust non linked LIs slightly to account for bugs*/
+    padding-right: 9px;
+    padding-left: 9px;
+}
+/************************* PAGINATION **************************************/
+
+
+/************************ BUTTON STYLE *************************************/
+
+.btntype1 {
+    float:left;
+    margin: 3px 5px 0px 0px;
+}
+
+.btntype1 .c_r {
+    background: url("../../Images/Buttons/btn200x25.gif") no-repeat scroll right -25px transparent;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 25px;
+    padding-right: 5px;
+}
+
+.btntype1 .c_r .c_l {
+    background: url("../../Images/Buttons/btn200x25.gif") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 25px;
+    padding: 0 0 0 5px;
+}
+
+.btntype1 .c_r .c_l a {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #3D6FAC;
+    cursor: pointer;
+    display: block;
+    font-size: .8em;
+    line-height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.btntype1 .c_r .c_l a:hover{
+	color:Red;
+}
+
+#control .btntype1 .c_r .c_l a
+{
+    font-size: 1em;
+}
+
+.btntype1 .c_r .c_l img {
+    float: left;
+     margin: 5px 5px 0 0;
+    border:0 none;
+}
+
+.btnRight
+{
+	float:right;
+}
+
+/************************ END BUTTON STYLE *********************************/
+
+
+/************************ Begin Form Elements ******************************/
+fieldset {
+width:700px;
+margin:auto;
+margin-bottom:5px;
+padding:0;
+border:#2777B6 solid 1px;
+background:#FFC;
+font-size:1em;
+font-family:Times New Roman;
+}
+
+fieldset ol {
+padding: 5px 0 5px 90px;
+list-style: none;
+float:left;
+margin:0;
+}
+fieldset li {
+    clear: none;
+    display: inline;
+    float: left;
+	margin-bottom:5px;
+}
+
+
+
+
+
+fieldset li {
+    width: 300px;
+}
+
+fieldset li.short_li{
+    width: 220px;
+}
+fieldset li.tiny_li{
+    width: 150px;
+}
+fieldset li.long_li{
+    width: 600px;
+}
+
+fieldset li.linebreak
+{
+	margin:0px;
+	height:0px;
+}
+
+legend {
+margin-left: 1em;
+}
+legend {
+text-transform: uppercase;
+font-size: .9em;
+padding: 2px;
+margin-left: 1em;
+color: #ffffff;
+background: #2777B6;
+}
+
+fieldset li label {
+    display: block;
+    float: none;
+    width: auto;
+	font-weight:bold;
+	margin-bottom:1px;
+	margin-left:2px;
+	font-size:.8em;
+	 color:#2777B6;
+}
+
+fieldset li label.error
+{
+	color:red;
+	font-size:.75em;
+}
+
+fieldset li input {
+padding: 2px;
+font-size: .9em;
+}
+
+fieldset li input.error
+{
+	color: #1E1903;
+	border: 1px solid red !important;
+}
+
+fieldset li input.normal_text
+{
+	color: #1E1903;
+	border: 1px solid #2777B6;
+	width:200px;
+}
+
+fieldset li input.short_text
+{
+	color: #1E1903;
+	border: 1px solid #2777B6;
+	width:100px;
+	
+}
+
+fieldset li input.long_text
+{
+	color: #1E1903;
+	border: 1px solid #2777B6;
+	width:500px;
+}
+
+fieldset li input.radio
+{
+	border: 1px solid #2777B6;
+	color: #1E1903;
+	border:none;
+	background:none;
+}
+
+fieldset li select{
+	padding: 1px;
+	font-size: .9em;
+	border: 1px solid #2777B6;
+	color: #1E1903;
+	width:200px;
+}
+
+fieldset li select.error
+{
+	border: 1px solid red;
+}
+
+fieldset li select.short_select{
+	width:100px;
+	
+}
+fieldset li textarea{
+	padding: 1px;
+	font-size: .9em;
+	border: 1px solid #2777B6;
+	color: #1E1903;
+	width:500px;
+	height:70px;
+}
+fieldset li textarea.error
+{
+	border: 1px solid red;
+}
+
+
+
+fieldset .required
+{
+	color:Red;
+}
+.fieldset_hide{display:none;}
+.fieldset_show{display:block;}
+
+
+/************************ End Form Elements ******************************/
+
+
+/************************ Popup ******************************/
+        #popupContact{  
+    display:none;  
+    position:fixed;  
+    _position:absolute; /* hack for internet explorer 6*/  
+    height:320px;  
+    width:408px;  
+    background:#FFFFFF;  
+    border:2px solid #cecece;  
+    z-index:2;  
+    padding:12px;  
+    font-size:13px;  
+    }  
+    #popupContact h1{  
+    text-align:left;  
+    color:#6FA5FD;  
+    font-size:22px;  
+    font-weight:700;  
+    border-bottom:1px dotted #D3D3D3;  
+    padding-bottom:2px;  
+    margin-bottom:20px;  
+    }  
+    #popupContactClose{  
+    font-size:14px;  
+    line-height:14px;  
+    right:6px;  
+    top:4px;  
+    position:absolute;  
+    color:#6fa5fd;  
+    font-weight:700;  
+    display:block;  
+    cursor: pointer; 
+    }  
+    #popupContact.a{  
+    cursor: pointer;  
+    text-decoration:none;  
+    } 
+
+        #backgroundPopup{  
+    display:none;  
+    position:fixed;  
+    _position:absolute; /* hack for internet explorer 6*/  
+    height:100%;  
+    width:100%;  
+    top:0;  
+    left:0;  
+    background:#000000;  
+    border:1px solid #cecece;  
+    z-index:1;  
+    }  
+/************************ End Popup ******************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fieldset li.mini_li
+{
+	width:150px;
+}
+
+fieldset li.mini2_li
+{
+	width:100px;
+}
+
+fieldset li input.short2_text
+{
+	width:80px;
+	border: 1px solid #2777B6;
+	color: #1E1903;
+}
+
+fieldset li.chk_li
+{
+	width:80px;
+}
+
+fieldset li.kytu
+{
+	width:20px;
+	text-align:center;
+}
+
+fieldset li input.mini_text
+{
+	width:135px;
+}
+
+fieldset li input.name_text
+{
+	width:284px;
+	border: 1px solid #2777B6;
+	color: #1E1903;
+}
+
+fieldset li select.cbo_mini{
+	padding: 1px;
+	font-size: .9em;
+	border: 1px solid #2777B6;
+	color: #1E1903;
+	width:140px;
+}
+
+fieldset li select.cbo_normal{
+	padding: 1px;
+	font-size: .9em;
+	border: 1px solid #2777B6;
+	color: #1E1903;
+	width:280px;
+}
+
+fieldset .admindeal{
+padding: 5px 0 5px 50px;
+list-style: none;
+float:left;
+margin:0;
+}
+
+#content #tblDanhSach .td_order .inputText {
+    font-size: 1em;
+    margin: 0 auto;
+    padding: 0.2em;
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    width: 20px;
+    text-align:center;
+}
+
+#content #tblDanhSach .td_order .btn_order_up {
+    background:url(../../Images/sortascending.gif) no-repeat;
+    width:10px;
+    height:9px;
+    float:left;
+    cursor:pointer;
+}
+
+#content #tblDanhSach .td_order .btn_order_down {
+    background:url(../../Images/sortdescending.gif) no-repeat;
+    width:10px;
+    height:9px;
+    float:right;
+    cursor:pointer;
+}
+
+.capture_0{font:bold 12px arial;color:#FF8000;border:1px solid #FF8000;text-align:center;}
+.capture_1{font:bold 12px arial;color:blue;border:1px solid blue;text-align:center;}
+.capture_2{font:bold 12px arial;color:red;border:1px solid red;text-align:center;}
+.capture_3{font:bold 12px arial;color:black;border:1px solid black;text-align:center;}
+.capture_4{font:normal 12px arial;color:#886A08;border:1px solid #886A08;text-align:center;}
+.capture_5{font:normal 12px arial;color:green;border:1px solid green;text-align:center;}
+.capture_6{font:normal 12px arial;color:purple;border:1px solid purple;text-align:center;}
+
+/* BEGIN id=tblPhanDH */
+#tblPhanDH
+{
+    border-collapse: collapse;
+    margin: auto;
+}
+#content #tblPhanDH tr.odd
+{
+    background: #E6F2FF;
+}
+#content #tblPhanDH tr:hover
+{
+    background: #BBDBFF !important;
+}
+#content #tblPhanDH tr.rowChecked
+{
+    color: Red;
+}
+#content #tblPhanDH th
+{
+    font-size: .7em;
+    color: #fff;
+    background: #2777B6;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+    padding: .2em .2em;
+    border: 1px solid #999;
+    margin: 0;
+}
+#content #tblPhanDH td
+{
+    padding: .2em .2em;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+    font-size: .7em;
+    border: 1px solid #999;
+    margin: 0;
+    font-family:Arial;
+}
+
+#content #tblPhanDH a.table_list_edit{
+	width:22px;
+	height:22px;
+    float:left;
+	background:url(../../images/action_icons.gif) no-repeat -24px 0;
+	display:block;
+	margin-right:4px;
+}
+
+#content #tblPhanDH a.table_list_delete{
+	width:22px;
+	height:22px;
+    float:left;
+	background:url(../../images/action_icons.gif) no-repeat -48px 0;
+	display:block;
+}
+
+#content #tblPhanDH a.table_list_save {
+    background: url("../../images/action_icons.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 22px;
+    margin-right: 4px;
+    width: 22px;
+}
+
+#content #tblPhanDH a.table_list_chon {
+    background: url("../../images/left.png")no-repeat;
+    display: block;
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin-left: 4px;
+}
+#content #tblPhanDH a.table_list_chon:hover
+{
+	color:Red;
+}
+
+#content #tblPhanDH a.table_list_print {
+    background: url("../../images/print_16.png")no-repeat;
+    display: block;
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+}
+
+#content #tblPhanDH .inputText {
+    font-size: 1em;
+    margin: 0 auto;
+    padding: 0.2em;
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    width: 95%;
+}
+
+/* END id=tblPhanDH */
+
+#content .divPhanDH{width:900px;}
+#content .divPhanDH1{width:300px;float:left;}
+#content .divPhanDH2
+{
+    width: 300px;
+    float: left;
+}
+#content .divPhanDH3{width:300px;float:left;}
+#content .divPhanDH .divtitle{width:300px;float:left;clear:both;font-size: .7em;
+    color: #fff;
+    background: #2777B6;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+    line-height: 20px;
+    padding: .2em .2em;
+    border: 1px solid #999;
+    margin: 0;}
+#content .divPhanDH .dsdh{float:left;clear:both;height: 500px;overflow: auto;}
+#content .divPhanDH .dsktdh{float:left;clear:both;height: 350px;overflow: auto;}
+#content .divPhanDH .calendarDH{float:left;clear:both;height: 150px;overflow: auto;}
+
+#content2 .divChuyenDH{width:870px;float:left;clear:both;}
+#content2 .divChuyenDH1{width:220px;float:left;}
+#content2 .divChuyenDH2
+{
+    width: 360px;
+    float: left;
+}
+#content2 .divChuyenDH3{width:290px;float:left;}
+#content2 .divChuyenDH .divtitle{width:300px;float:left;clear:both;font-size: .7em;
+    color: #fff;
+    background: #2777B6;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+    line-height: 20px;
+    padding: .2em .2em;
+    border: 1px solid #999;
+    margin: 0;}
+#content2 .divChuyenDH .dsdh{float:left;clear:both;height: 500px;overflow: auto;}
+#content2 .divChuyenDH .dsdh2{float:left;clear:both;height: 140px;overflow: auto;}  
+#content2 .divChuyenDH .dsdh3{float:left;clear:both;height: 370px;overflow: auto;}
+
+#content2 .divChuyenDH_control
+{
+    width:850px;
+    float:left;
+    clear:both;
+    line-height: 30px;
+    height: 30px;
+    background-color: #D0D0D0;
+    font-size: 0.7em;
+    margin: 0px;
+    padding: 1px 0px 2px 20px;
+    text-align: left;
+    border-bottom:solid 1px #000;
+ /*   border: solid 1px #999;*/
+}
+
+#content2 .divChuyenDH_control select,#content2 .divChuyenDH_control input
+{
+	border:solid 1px #2777B6;
+    float:left;
+    margin: 4px 5px 0 0;
+    line-height:23px;
+}
+
+#content2 .divChuyenDH_control select
+{
+	height:22px;
+}
+
+#content2 .divChuyenDH_control input
+{	
+	height:20px;
+}
+
+/* BEGIN id=tblChuyenDH */
+#tblChuyenDH
+{
+    border-collapse: collapse;
+    margin: auto;
+}
+#content2 #tblChuyenDH tr.odd
+{
+    background: #E6F2FF;
+}
+#content2 #tblChuyenDH tr:hover
+{
+    background: #BBDBFF !important;
+}
+#content2 #tblChuyenDH tr.rowChecked
+{
+    color: Red;
+}
+#content2 #tblChuyenDH th
+{
+    font-size: .7em;
+    color: #fff;
+    background: #2777B6;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+    padding: .2em .2em;
+    border: 1px solid #999;
+    margin: 0;
+}
+#content2 #tblChuyenDH td
+{
+    padding: .2em .2em;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+    font-size: .7em;
+    border: 1px solid #999;
+    margin: 0;
+}
+
+#content2 #tblChuyenDH a.table_list_edit{
+	width:22px;
+	height:22px;
+    float:left;
+	background:url(../../images/action_icons.gif) no-repeat -24px 0;
+	display:block;
+	margin-right:4px;
+}
+
+#content2 #tblChuyenDH a.table_list_delete{
+	width:22px;
+	height:22px;
+    float:left;
+	background:url(../../images/action_icons.gif) no-repeat -48px 0;
+	display:block;
+}
+
+#content2 #tblChuyenDH a.table_list_save {
+    background: url("../../images/action_icons.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 22px;
+    margin-right: 4px;
+    width: 22px;
+}
+
+#content2 #tblChuyenDH a.table_list_chon {
+    background: url("../../images/left.png")no-repeat;
+    display: block;
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin-left: 4px;
+}
+#content2 #tblChuyenDH a.table_list_chon:hover
+{
+	color:Red;
+}
+
+#content2 #tblChuyenDH a.table_list_print {
+    background: url("../../images/print_16.png")no-repeat;
+    display: block;
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+}
+
+#content2 #tblChuyenDH .inputText {
+    font-size: 1em;
+    margin: 0 auto;
+    padding: 0.2em;
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    width: 95%;
+}
+
+/* END id=tblPhanDH */
+
+#content .divPhanDH2 .calendar_day {position:relative;}
+#content .divPhanDH2 .calendar_day img.calendar_day_img {position:absolute;top:0;left:0;z-index:-1;}
+#content .divPhanDH2 .calendar_day img.calendar_day_img2 {position:absolute;top:0;left:0;}
+
+.btntype1 .pnx_currentday{font:normal 12px arial;color:Red;}

@@ -1,0 +1,706 @@
+﻿ul, ol {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6, pre, code, p {
+	font-size: 13px;
+}
+ul, ol, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
+	margin: 0;
+	padding: 0;
+}
+a img, :link img, :visited img {
+	border: none;
+}
+address {
+	font-style: normal;
+}
+
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	font: 13px Arial, Helvetica, sans-serif;
+	color: #000; /*line-height: 1.3em;*/
+}
+
+body.inner {
+	background: url(../../images/bg_body_inner.gif) repeat-x top;
+}
+
+body.inner.clickMap{
+	background: url(../../images/bg_body_inner_narrow.gif) repeat-x top;
+}
+
+body.modal-window {
+	background-image: none;
+	background-color: #F1F1F1;
+	position: absolute;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+body.modal-window form {
+	height: 100%;
+	width: 100%;
+}
+
+.wrap {
+	width: 965px;
+	margin: 0px auto;
+}
+
+.page-header-logo {
+	width: 100%;
+	height: 136px;
+	position: relative;
+	border-bottom:solid #2777B6;
+}
+
+.logo {
+	position: absolute;
+	top: 45px;
+	left: 5px;
+	width: 250px;
+	height: 65px;
+	background: url(../../images/logo_TB_1.png) no-repeat;
+}
+
+.columns-container {
+	background: url(../../images/bg_right.gif) repeat-y top right;
+	width: 100%;
+	overflow: hidden;
+	margin: 45px 0px 0px; /*min-height: 720px;*/
+}
+
+.clickMap .columns-container
+{
+	background: none;
+	margin-top: 0px;
+}
+
+ul.menu {
+	float: left;
+	position: absolute;
+	top: 75px;
+	left: 315px;
+}
+
+ul.menu li {
+	float: left;
+	padding: 0 10px 0 12px;
+	height: 21px;
+	background: transparent url(../../images/menu_separator.gif) no-repeat;
+}
+
+ul.menu li a {
+	font-weight: bold;
+	color: #fff;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+ul.menu li a:hover {
+	text-decoration: underline;
+}
+
+ul.menu li a.home {
+	width: 15px;
+	height: 15px;
+	background: url(../../images/home.gif) no-repeat;
+	display: block;
+}
+
+.language-selector {
+	position: absolute;
+	top: 58px;
+	right: -60px;
+	width: 240px;
+}
+
+.language-selector-caption {
+	color: White;
+	font-family: Arial;
+	font-size: 8pt;
+	margin-bottom: 2px;
+}
+
+.contentL {
+	width: 630px;
+	float: left;
+}
+
+.clickMap .contentL {
+	width: 100%;
+}
+
+body.main .columns-container .page-header {
+	width: 630px;
+	height: 250px;
+	margin: 0px 0px 70px 0px;
+}
+
+body.clickMap .columns-container .page-header h3 {
+	padding-top: 17px;
+}
+
+body.inner .columns-container .page-header {
+	width: 630px;
+	height: 45px;
+	margin: 0px 0px 35px 0px;
+	padding-top: 5px;
+}
+
+body.clickMap .columns-container .page-header {
+	width: 100%;
+}
+
+body.clickMap .columns-container .page-header{
+	padding-top: 0px;
+}
+
+.page-content {
+	overflow: hidden;
+	width: 100%;
+}
+
+.tiser {
+}
+
+.tiser li {
+	width: 290px;
+	float: left;
+	margin: 0px 30px 0px 0px;
+}
+
+.home-content .visitors-teaser {
+	background: url(../../images/en/bg_h4_1.gif) no-repeat top;
+	height: 43px;
+	width: 215px;
+	display: block;
+}
+
+body.da-DK .home-content .visitors-teaser {
+	background: url(../../images/da/bg_h4_1.gif) no-repeat top;
+	height: 43px;
+	width: 242px;
+	display: block;
+}
+
+body.nn-NO .home-content .visitors-teaser {
+	background: url(../../images/nn/bg_h4_1.png) no-repeat top;
+	height: 43px;
+	width: 240px;
+	display: block;
+}
+
+body.sv-SE .home-content .visitors-teaser {
+	background: url(../../images/sv/bg_h4_1.png) no-repeat top;
+	height: 43px;
+	width: 252px;
+	display: block;
+}
+
+body.fi-FI .home-content .visitors-teaser {
+	background: url(../../images/fi/bg_h4_1.gif) no-repeat top;
+	height: 43px;
+	width: 252px;
+	display: block;
+}
+
+.home-content .evaluate-teaser {
+	background: url(../../images/en/bg_h4_2.gif) no-repeat top;
+	height: 43px;
+	width: 203px;
+	display: block;
+}
+
+body.da-DK .home-content .evaluate-teaser {
+	background: url(../../images/da/bg_h4_2.gif) no-repeat top;
+	height: 43px;
+	width: 268px;
+	display: block;
+}
+
+body.nn-NO .home-content .evaluate-teaser {
+	background: url(../../images/nn/bg_h4_2.png) no-repeat top;
+	height: 43px;
+	width: 260px;
+	display: block;
+}
+
+body.sv-SE .home-content .evaluate-teaser {
+	background: url(../../images/sv/bg_h4_2.png) no-repeat top;
+	height: 43px;
+	width: 277px;
+	display: block;
+}
+
+body.fi-FI .home-content .evaluate-teaser {
+	background: url(../../images/fi/bg_h4_2.gif) no-repeat top;
+	height: 43px;
+	width: 294px;
+	display: block;
+}
+
+.home-content .freetoask-teaser {
+	background: url(../../images/en/bg_h4_3.gif) no-repeat top;
+	height: 43px;
+	width: 233px;
+	display: block;
+}
+
+body.da-DK .home-content .freetoask-teaser {
+	background: url(../../images/da/bg_h4_3.gif) no-repeat top;
+	height: 43px;
+	width: 266px;
+	display: block;
+}
+
+body.nn-NO .home-content .freetoask-teaser {
+	background: url(../../images/nn/bg_h4_3.png) no-repeat top;
+	height: 43px;
+	width: 255px;
+	display: block;
+}
+
+body.sv-SE .home-content .freetoask-teaser {
+	background: url(../../images/sv/bg_h4_3.png) no-repeat top;
+	height: 43px;
+	width: 236px;
+	display: block;
+}
+
+body.fi-FI .home-content .freetoask-teaser {
+	background: url(../../images/fi/bg_h4_3.gif) no-repeat top;
+	height: 43px;
+	width: 255px;
+	display: block;
+}
+
+.home-content .crowd-teaser {
+	background: url(../../images/en/bg_h4_4.gif) no-repeat top;
+	height: 43px;
+	width: 223px;
+	display: block;
+}
+
+body.da-DK .home-content .crowd-teaser {
+	background: url(../../images/da/bg_h4_4.gif) no-repeat top;
+	height: 43px;
+	width: 222px;
+	display: block;
+}
+
+body.nn-NO .home-content .crowd-teaser {
+	background: url(../../images/nn/bg_h4_4.png) no-repeat top;
+	height: 43px;
+	width: 222px;
+	display: block;
+}
+
+body.sv-SE .home-content .crowd-teaser {
+	background: url(../../images/sv/bg_h4_4.png) no-repeat top;
+	height: 43px;
+	width: 222px;
+	display: block;
+}
+
+body.fi-FI .home-content .crowd-teaser {
+	background: url(../../images/fi/bg_h4_4.gif) no-repeat top;
+	height: 43px;
+	width: 222px;
+	display: block;
+}
+
+.contentR {
+	background: url(../../images/right_u.gif) no-repeat top left;
+	width: 240px;
+	float: right;
+	margin: 0px 10px 0px 0px;
+	padding: 25px 30px 0px 30px;
+	position: relative;
+}
+
+.clickMap .contentR {
+	display: none;
+}
+
+.page-footer {
+	background: url(../../images/right_b.gif) no-repeat right top;
+	width: 100%;
+	margin: 0px;
+	height: 60px;
+	padding: 8px 0px 0px 0px;
+	font-size: 10px;
+}
+
+.clickMap .page-footer
+{
+	background: none;
+}
+
+.footer_l {
+	width: 630px;
+	border-top: 1px solid #999;
+	padding: 5px 0px 0px 0px;
+	display: block;
+}
+
+.clickMap .footer_l{
+	width: 100%;
+}
+
+.footer_l a {
+	color: #669900;
+}
+
+/* IE 6 fixes */
+.contentR {
+	_margin: 0px 5px 0px 0px;
+	_overflow: hidden;
+}
+
+.fix {
+	width: 100%;
+	overflow: hidden;
+}
+/* begin common */
+a {
+	color: #1e72da;
+	text-decoration: underline;
+}
+
+p {
+	overflow: hidden;
+	display: block;
+	line-height: 1.4em;
+	color: #666666;
+}
+
+.contentL p, .additional-content p {
+	margin-bottom: 10px;
+}
+.page-header h1 {
+	font-size: 21px;
+	font-family: GothamHTF, Arial, Verdana;
+	color: #444;
+	font-weight: bold;
+}
+
+h2 {
+	color: #333;
+	font-family: Arial, Verdana;
+	font-size: 19px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+h3 {
+	color: #333;
+	font-family: Arial;
+	font-size: 15px;
+	padding-bottom: 10px;
+	padding-top: 15px;
+}
+h4 {
+	font-size: 16px;
+	margin: 0px 0px 15px 0px;
+}
+
+h1 span, h2 span, h3 span, h4 span {
+	font-weight: normal;
+}
+/* end common */
+
+/* modal popup */
+.RadWindow {
+	background: #fff;
+	padding: 10px;
+	zoom: 1;
+}
+
+.RadWindow .rwTitleRow {
+	height: 30px;
+}
+
+.RadWindow .rwTitleRow .rwTopResize, .RadWindow .rwFooterRow .rwFooterCenter, .RadWindow .rwCorner {
+	display: none;
+}
+
+.RadWindow .rwTitleRow .rwTitlebarControls {
+	background-color: #4BACE8;
+	margin-bottom: 10px;
+}
+
+.RadWindow .rwWindowContent {
+	border: 1px solid #999 !important;
+}
+
+.RadWindow .rwTitlebar {
+	height: 37px !important;
+}
+
+.RadWindow .rwTitlebar em {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 10px !important;
+	margin-top: 2px;
+	padding: 0px !important;
+}
+
+.RadWindow a.rwCloseButton, .radWindow a.rwCloseButton:hover {
+	background: url('../../images/popupclosebtn.gif') left top no-repeat !important;
+	cursor: pointer !important;
+	height: 20px !important;
+	margin-right: 5px;
+	margin-top: 2px;
+	width: 20px !important;
+}
+/* end modal popup */
+
+.tours .columns-container {
+	background: none; /*min-height: 0;*/
+}
+
+.tours .contentR {
+	background: url(../../images/right_u.gif) no-repeat left top;
+	padding: 8px 0 0 0;
+	margin: 0 10px 0;
+	width: 300px;
+}
+
+.tours .contentR .inner {
+	background: url(../../images/right_b.gif) no-repeat left bottom;
+	padding-bottom: 20px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.tours .contentR .inner-2 {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 17px;
+	background: url(../../images/bg_right.gif) repeat-y left top;
+	position: relative;
+}
+
+.tours .page-footer {
+	background: none;
+	width: 965px;
+}
+
+.tours .footer_l {
+	float: left;
+}
+
+.tours .footer_r {
+	float: right;
+	width: 300px;
+	border-top: 2px solid #CDCDCD;
+}
+
+.clickMap .footer_r 
+{
+	display: none;
+}
+
+.tours .additional-content {
+	margin-top: 30px;
+}
+
+.tour {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.tour .video, .tour .video-wide, .tour .description {
+	border-top: 2px solid #CDCDCD;
+	padding-top: 30px;
+}
+
+.tour .video {
+	float: left;
+	width: 632px;
+	height:300px;
+}
+
+.tour .video-wide {
+	float: left;
+	width: 630px;
+	height:250px;
+}
+
+.tour .description {
+	float: right;
+	width: 300px;
+}
+
+.debugger {
+	display: none;
+	position: absolute;
+	left: 0px;
+	right: 0pt;
+	bottom: 0pt;
+	top: 0pt;
+	z-index: 100;
+	text-align: center;
+	opacity: 0.3;
+	zoom: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30);";
+}
+.debug {
+	overflow: auto;
+}
+
+div.icons {
+	text-align: center;
+	text-align: -moz-center;
+}
+
+div.icons div {
+	margin-top: 30px;
+}
+
+div.icons .signup {
+	margin-left: -5px;
+}
+
+div.date-multi-calendar {
+	background-color: #868686;
+	width: 660px;
+	border: solid 2px 9B9B9B;
+}
+
+div.date-multi-calendar .date-header {
+	background-image: url(../../images/calendarHeaderBack.gif);
+	background-repeat: repeat-x;
+	height: 28px;
+	margin: 0px;
+	border: solid 1px 9B9B9B;
+}
+
+div.date-multi-calendar .date-calendar-content {
+	overflow: hidden;
+	display: block;
+	margin: 0px;
+}
+
+div.date-multi-calendar .date-calendar-content .calendar {
+	float: left;
+	margin: 0;
+	height: 182px;
+}
+
+div.date-multi-calendar .date-calendar-content .calendar table.RadCalendar_Default {
+	height: 182px;
+}
+
+div.date-multi-calendar .date-calendar-content .calendar table.RadCalendar_Default .rcTitlebar {
+	height: 26px;
+}
+
+div.date-multi-calendar .date-header a {
+	background-repeat: no-repeat;
+	height: 11px;
+	width: 15px;
+	display: block;
+}
+
+div.date-multi-calendar .date-header a.date-left {
+	background-image: url(../../images/calendar_left.gif);
+	float: left;
+	margin: 10px 5px 5px 10px;
+}
+
+div.date-multi-calendar .date-header a.date-left-fast {
+	background-image: url(../../images/calendar_left_fast.gif);
+	float: left;
+	margin: 10px 5px 5px 10px;
+}
+
+
+
+div.date-multi-calendar .date-header a:hover.date-left {
+	background-image: url(../../images/calendar_left_h.gif);
+}
+
+div.date-multi-calendar .date-header a:hover.date-left-fast {
+	background-image: url(../../images/calendar_left_fast_h.gif);
+}
+
+
+div.date-multi-calendar .date-header a.date-right {
+	background-image: url(../../images/calendar_right.gif);
+	float: right;
+	margin: 10px 5px 5px 10px;
+}
+
+div.date-multi-calendar .date-header a.date-right-fast {
+	background-image: url(../../images/calendar_right_fast.gif);
+	float: right;
+	margin: 10px 10px 5px 5px;
+}
+
+div.date-multi-calendar .date-header a:hover.date-right {
+	background-image: url(../../images/calendar_right_h.gif);
+}
+
+div.date-multi-calendar .date-header a:hover.date-right-fast {
+	background-image: url(../../images/calendar_right_fast_h.gif);
+}
+
+div.date-multi-calendar .date-calendar-content .RadCalendar_Default .rcNoNav .rcTitle {
+	height: 26px;
+}
+
+div.date-multi-calendar .buttons {
+	background-color: #FFFFFF;
+}
+
+div.export-date-selector {
+	display:inline;
+	float:left;
+}
+
+div.export-button {
+	display:inline;
+	margin-left:15px;
+}
+
+div.export-button input {
+	color:#1D6BD7;
+	height:22px;
+	padding:0px 15px;
+}
+
+.clearer {
+	clear: both;
+}
+
+.websites-search {
+	margin-bottom: 20px;
+}
+
+.home-content ul.data, .home-content ul.data li {
+	margin-left: 20px;
+	list-style: disc;
+}
+
+.preview-area-overlay {
+	background: #000 url(../../images/preview_area.gif) no-repeat 3px 100px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+}
+
+.ru-RU .preview-area-overlay {
+	background-image: url(../../images/preview_area.ru-RU.gif);
+}
+
+.da-DK .preview-area-overlay {
+	background-image: url(../../images/preview_area.da-DK.gif);
+}
